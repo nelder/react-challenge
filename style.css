@@ -1,0 +1,103 @@
+*, *:before, *:after{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-moz-o-sizing: border-box;
+	box-sizing: border-box;
+}
+#pageHeading{
+	margin-top:10px;
+	background-color:red;
+	width:100%;
+	background: #269661; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #1E5A90, #269661); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1E5A90, #269661); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white;
+	text-align: center;
+	padding:50px;
+	font-weight:800;
+}
+#searchBar{
+	padding:25px;
+	width:100%;
+}
+@media only screen and (max-width: 742px) {
+	#searchQuery{
+		width:50%;
+	}
+}
+#searchQuery{
+	width:100%;
+	padding:10px;
+	display:inline-block;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    justify-content: space-between;
+    float:left;
+
+}
+#searchButton{
+	margin-left:15px;
+	width:49px;
+	background: #269661; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #257F74, #269661); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #257F74, #269661); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding:10px;
+	height:48px;
+	box-sizing: border-box;
+	display:inline-block;
+	float:right;
+	margin-top:-48px;
+    cursor:pointer;
+}
+#searchButton:hover{
+	background: #2AA86E; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2B9388, #2AA86E); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2B9388, #2AA86E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
+.searchIcon{
+	color: #FFFFFF; 
+	font-size: 32px;
+	margin-left:-8px;
+}
+#searchBar #queryContainerOffset{
+	padding-right: 60px; 
+	width: "100%";
+}
+#searchResultsContainer{
+	padding:25px;
+	margin-top:25px;
+}
+#favorites{
+	padding:25px;
+	background-color: #F7FEFA;
+	min-height: 200px;
+}
+#favoritesTitle{
+	color:#279960;
+}
+.greyStar{
+	color: #AAAAAA;
+	cursor:pointer;
+}
+.greenStar{
+	color: #279960;
+	cursor:pointer;
+}
+.searchResult{
+	margin-bottom:10px;
+}
+.searchResultInner{
+	display: flex;
+}
+.searchResultInner .star{
+	flex: 1;
+}
+.searchResultInner .spacer{
+	flex:3;
+}
+.searchResultInner .title{
+	flex: 8;
+}
+.searchResultInner .desc{
+	flex: 13;
+}
